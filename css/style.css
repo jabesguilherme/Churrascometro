@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@400;600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60%;
+    overflow: hidden;
+}
+
+
+h1, h2, span{
+    font-size: 4rem;
+}
+h3, p, label, input, button{
+    font-size: 2rem;
+}
+.container{
+    max-height: 100vh;
+    background: #f3f8ff;
+}
+.text-content{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+.box-calculo{
+    background: #ffa256;
+    border-radius: 4rem 0 0 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-calculo img{
+    width: 60rem;
+    margin: 2rem;
+}
+.form{
+    margin-top: 2rem;
+    width: 90%;
+}
+.form .input-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.box-calculo label{
+    margin-top: 0.5rem;
+}
+
+.box-calculo input{
+    width: 100%;
+    height: 5.6rem;
+    background: #fafafc;
+    border: 0.1rem solid #e6e6f0;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.box-calculo input::placeholder{
+    color: #9c98a6;
+}
+
+.box-calculo button{
+    width: 18.8rem;
+    height: 5.7rem;
+    background: #fd8709;
+    color: #fff;
+    border: none;
+    border-radius: 3.6rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.box-calculo button:hover{
+    background: #ffc383;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+}
+
+/*CSS JS*/
+.result-info{
+    text-align: center;
+    color: rgb(44, 44, 44);
+    width: 0 auto;
+    margin-top: 1rem;
+}
+
+.result-block{
+    display:flex;
+    align-items: center;
+    margin: 1.8rem;
+    padding-left: 9rem;
+}
+
+.result-block img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.result-block p{
+    text-align: center;
+    color: rgb(44, 44, 44);
+}
+
+
+
+@media (min-width: 700px) {
+    * {
+      overflow: hidden;
+    }
+    .text-content h2{
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .text-content h1, spanT{
+        width: 100%;
+        margin-top: 5rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    span{
+        color: #ff7300;
+    }
+    .box-calculo{
+        height: 100vh;
+        background: #ffa256;
+        border-radius: 4rem 0 0 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form{
+        margin-top: 2rem;
+        width: 70%;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 0;
+    }
+    .container{
+        background-image: url(/CHURRASCOMETRO/img/home.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;  
+    }
+    
+    footer{ 
+        position: fixed;
+        margin-top: 87rem;      
+    }
+    .foter-text p{
+        
+        font-size: 1.2rem;
+        color: rgb(44, 44, 44);
+    }
+
+    /*
+    section{
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+    }
+    .services-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    
+    }
+    .services-container .services-box{
+        flex: 1 1 30rem;
+        background: red;
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid black;
+        transition: .5s ease;
+    }
+    .services-container .services-box:hover {
+        border-color: black;
+        transform: scale(1.02);
+    }
+    .services-box h3{
+        font-size: 2.6rem;
+    }
+    
+    .services-box p{
+        font-size: 1.6rem;
+        margin: 1rem 0 3rem;
+    }
+
+
+
+
+
+    /*Animation CSS*/
+    .box-calculo {
+        position: relative;
+        animation: animateUser 0.8s linear alternate;
+    }
+    @keyframes animateUser{
+        from{
+            transform: translateX(700px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .text-content h1, h2, spanT{
+        position: relative;
+        animation: animateText 0.8s linear alternate;
+    }
+    @keyframes animateText{
+        from{
+            transform: translateY(700px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+
+}

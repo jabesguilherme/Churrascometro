@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/tampa.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>CHURRACÔMETRO <img src="./img/tampa.png" alt=""> </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="text-content">
+                <h1>Quantidade de <span class="spanT"></span></h1>
+                <h2>que irá precisar para o churrasco.</h2>
+            </div>
+            <!--Area de calculo-->
+
+            <div class="box-calculo">
+                <img class="logo" src="./img/churraslogo.png" alt="">
+                <div class="form">
+                    <div class="input-block">
+                        <label for="adultos">Quantidade de Adultos</label>
+                        <input id="adultos" name="adultos" type="number" placeholder="Adultos">
+
+                        <label for="criancas">Quantidade de Crianças</label>
+                        <input id="criancas" name="crianca" type="number" placeholder="Crianças (0 se não houver)">
+
+                        <label for="duracao">Duração do Churrasco</label>
+                        <input id="duracao" name="duracao" type="number" placeholder="Duração (H)">
+
+                        <button onclick="calcular()" id="button">Calcular</button>
+                    </div>
+                    <div id="resultado"></div>
+
+                </div>
+                <footer class="footer">
+                    <div class="foter-text">
+                        <p>Copywriter &copy; 2023 por Jabes Voltatoni | todos os direitos reservados</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+        <!--  services section design  -->
+        <section class="infos" id="infos">
+
+            <div class="services-container">
+                <div class="services-box">
+                    <h3>O'que esta sendo <span>calculado</span></h3>
+                    <p>Esta sendo calculado a quantidade de carne, cerveja e refrigerante/agua</p>
+                </div>
+
+                <div class="services-box">
+                    <h3>Calculo da Carne</h3>
+                    <p>Esta sendo calculado 400 gr por pessoa, se por acaso a duração do churrasco for igual ou passar de 6 horas, passara a calcular 650gr por pessoa.</p>
+                </div>
+
+                <div class="services-box">
+                    <h3>Calculo da Cerveja</h3>
+                    <p>Esta sendo calculado 1200 ml  por pessoa, se por acaso a duração do churrasco for igual ou passar de 6 horas, passara a calcular 2000 ml por pessoa.</p>
+                </div>
+
+                <div class="services-box">
+                    <h3>Calculo do Refrigerante</h3>
+                    <p>Esta sendo calculado 1200 ml por pessoa, se por acaso a duração do churrasco for igual ou passar de 6 horas, passara a calcular 1500 ml por pessoa.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- typed js  -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
